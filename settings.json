@@ -1,0 +1,6 @@
+{
+  "counter": {
+    "type": "number",
+    "default": 0
+  }
+}
