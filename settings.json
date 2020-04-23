@@ -1,5 +1,5 @@
 {
-  "source": "https://raw.githubusercontent.com/aabrook/WebComponentPlayUpdate/master/src/index.js",
+  "source": "https://raw.githubusercontent.com/aabrook/WebComponentPlayUpdate/master/service.js",
   "state": {
     "counter": {
       "type": "number",

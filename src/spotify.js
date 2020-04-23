@@ -7,7 +7,6 @@ export const settings = {
 };
 
 export const render = ()=> {
-  console.log('rendering the spotify button')
   return {
     ...settings,
     render: ({ source, width, height }) => html`
@@ -23,4 +22,4 @@ export const render = ()=> {
   };
 };
 
-define('spotify-button', render())
+// define('spotify-button', render())
