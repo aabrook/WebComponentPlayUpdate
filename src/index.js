@@ -23,10 +23,10 @@ class Counter extends HTMLElement {
   constructor() {
     super()
 
-    var root = this.createShadowRoot();
+    var root = this.attachShadow({mode: 'open'});
     const p = document.createElement('p')
     p.innerHTML = '<h1>Sup!</h1>'
-    root.appendChild(clone);
+    root.appendChild(p);
   }
 }
 var XComponent = customElements.define('my-counter', Counter);
