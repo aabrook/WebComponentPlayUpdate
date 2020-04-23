@@ -10,7 +10,9 @@ export const render = settings => {
   return {
     ...settings,
     render: ({ counter }) => html`
-      <div>${counter}</div>
+      <div>
+        My suhweet counter: ${counter}
+      </div>
     `
   };
 };
