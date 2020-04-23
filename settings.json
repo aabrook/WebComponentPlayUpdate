@@ -1,6 +1,9 @@
 {
-  "counter": {
-    "type": "number",
-    "default": 0
+  "source": "https://raw.githubusercontent.com/aabrook/WebComponentPlayUpdate/master/dist/src.0ed96be6.js",
+  "state": {
+    "counter": {
+      "type": "number",
+      "default": 0
+    }
   }
 }
