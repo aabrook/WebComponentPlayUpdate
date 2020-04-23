@@ -19,7 +19,7 @@
 //
 // define('counter', render())
 
-import { html, define } from 'https://unpkg.com/hybrids@4.1.7/esm/index.js';
+import { html, define } from 'https://unpkg.com/hybrids@4.1.7/esm';
 
 export function increaseCount(host) {
   host.count += 1;
