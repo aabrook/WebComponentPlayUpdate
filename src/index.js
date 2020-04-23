@@ -21,6 +21,8 @@
 //
 class Counter extends HTMLElement {
   constructor() {
+    super()
+
     var root = this.createShadowRoot();
     const p = document.createElement('p')
     p.innerHTML = '<h1>Sup!</h1>'
