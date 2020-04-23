@@ -19,15 +19,12 @@
 //
 // define('counter', render())
 //
-var XComponent = customElements.define('counter', {
-    prototype: Object.create(HTMLElement.prototype, {
-      createdCallback: {
-        value: function() {
-          var root = this.createShadowRoot();
-          const p = document.createElement('p')
-          p.innerHTML = '<h1>Sup!</h1>'
-          root.appendChild(clone);
-        }
-      }
-    })
-  });
+class Counter extends HTMLElement {
+  constructor() {
+    var root = this.createShadowRoot();
+    const p = document.createElement('p')
+    p.innerHTML = '<h1>Sup!</h1>'
+    root.appendChild(clone);
+  }
+}
+var XComponent = customElements.define('counter', Counter);
