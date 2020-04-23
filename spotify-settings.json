@@ -1,0 +1,17 @@
+{
+  "source": "https://raw.githubusercontent.com/aabrook/WebComponentPlayUpdate/master/dist/src.0ed96be6.js",
+  "state": {
+    "source": {
+      "type": "text",
+      "default": ""
+    },
+    "width": {
+      "type": "number",
+      "default": 300
+    },
+    "height": {
+      "type": "number",
+      "default": 380
+    }
+  }
+}
