@@ -1,4 +1,4 @@
-import { html } from "hybrids";
+import { html, define } from "hybrids";
 
 export const render = settings => {
   return {
@@ -15,3 +15,5 @@ export const render = settings => {
     `
   };
 };
+
+define('spotify-button', render())

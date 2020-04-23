@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { html } from "hybrids";
+import { html, define } from "hybrids";
 
 export const settings = {
   counter: 0
@@ -14,3 +14,5 @@ export const render = settings => {
     `
   };
 };
+
+define('counter', render())
