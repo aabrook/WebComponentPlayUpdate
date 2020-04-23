@@ -15,4 +15,4 @@ export const render = settings => {
   };
 };
 
-// define('counter', render())
+define('counter', render())

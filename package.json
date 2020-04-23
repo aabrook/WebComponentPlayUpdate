@@ -8,6 +8,7 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
+    "dangerously-set-html-content": "^1.0.3",
     "hybrids": "4.1.7"
   },
   "devDependencies": {
