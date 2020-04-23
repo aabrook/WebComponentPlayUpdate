@@ -1,2 +1,0 @@
-# WebComponentPlayUpdate
-Created with CodeSandbox
