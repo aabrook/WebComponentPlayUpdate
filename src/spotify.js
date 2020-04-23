@@ -1,32 +1,6 @@
-// import { html, define } from "hybrids";
-//
-// export const settings = {
-//   source: '',
-//   height: 300,
-//   width: 380
-// };
-//
-// export const render = ()=> {
-//   return {
-//     ...settings,
-//     render: ({ source, width, height }) => html`
-//       <iframe
-//         src="${source}"
-//         width="${width}"
-//         height="${height}"
-//         frameborder="0"
-//         allowtransparency="true"
-//         allow="encrypted-media"
-//       ></iframe>
-//     `
-//   };
-// };
-
-// define('spotify-button', render())
 
 class SpotifyPlaylist extends HTMLElement {
   getAttributes() {
-    console.log(this.getAttributeNames())
     return this.getAttributeNames().reduce((names, name) => ({ ...names, [name]: this.getAttribute(name) }), {})
   }
 
