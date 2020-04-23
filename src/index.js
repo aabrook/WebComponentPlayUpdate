@@ -19,7 +19,7 @@
 //
 // define('counter', render())
 
-import { html, define } from 'hybrids';
+import { html, define } from 'https://unpkg.com/hybrids@4.3.7/src';
 
 export function increaseCount(host) {
   host.count += 1;
