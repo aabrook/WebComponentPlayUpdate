@@ -18,20 +18,16 @@
 // };
 //
 // define('counter', render())
-
-import { html, define } from 'https://unpkg.com/hybrids@4.1.7/esm';
-
-export function increaseCount(host) {
-  host.count += 1;
-}
-
-export const SimpleCounter = {
-  count: 0,
-  render: ({ count }) => html`
-    <button onclick="${increaseCount}">
-      Count: ${count}
-    </button>
-  `,
-};
-
-define('simple-counter', SimpleCounter);
+//
+var XComponent = customElements.define('counter', {
+    prototype: Object.create(HTMLElement.prototype, {
+      createdCallback: {
+        value: function() {
+          var root = this.createShadowRoot();
+          const p = document.createElement('p')
+          p.innerHTML = '<h1>Sup!</h1>'
+          root.appendChild(clone);
+        }
+      }
+    })
+  });
