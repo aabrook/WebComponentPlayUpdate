@@ -27,4 +27,4 @@ class Counter extends HTMLElement {
     root.appendChild(clone);
   }
 }
-var XComponent = customElements.define('counter', Counter);
+var XComponent = customElements.define('my-counter', Counter);
