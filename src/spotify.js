@@ -25,10 +25,15 @@
 // define('spotify-button', render())
 
 class SpotifyPlaylist extends HTMLElement {
+  getAttributes() {
+    return this.getAttributeNames().reduce((names, name) => ({ ...names, name: this.getAttribute(name) }), {})
+  }
+
   constructor() {
     super()
 
-    const { source, height, width } = this.attributes
+    const { source, height, width } = this.getAttributes()
+
     var root = this.attachShadow({mode: 'open'});
     const p = document.createElement('div')
     const html = `<iframe
