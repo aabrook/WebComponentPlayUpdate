@@ -26,7 +26,8 @@
 
 class SpotifyPlaylist extends HTMLElement {
   getAttributes() {
-    return this.getAttributeNames().reduce((names, name) => ({ ...names, name: this.getAttribute(name) }), {})
+    console.log(this.getAttributeNames())
+    return this.getAttributeNames().reduce((names, name) => ({ ...names, [name]: this.getAttribute(name) }), {})
   }
 
   constructor() {
