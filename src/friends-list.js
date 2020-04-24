@@ -11,7 +11,7 @@ class FriendsList extends HTMLElement {
     const p = document.createElement('div')
     p.innerHTML = `
       <h1>${title || 'Title'}</h1>
-      <table className="${className || ''}" style="width:${width || '320px'}">
+      <table class="${className || ''}" style="width:${width || '320px'}">
         <tr><td>Friend</td><td></td></tr>
       ${(friends || '')
         .split('\\n')
