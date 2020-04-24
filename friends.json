@@ -5,6 +5,10 @@
       "type": "text",
       "default": "My peeps"
     },
+    "width": {
+      "type": "text",
+      "default": "320px"
+    },
     "friends": {
       "type": "text",
       "default": ""

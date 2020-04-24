@@ -6,12 +6,12 @@ class FriendsList extends HTMLElement {
   constructor() {
     super()
 
-    const { title, friends } = this.getAttributes()
+    const { title, friends, width } = this.getAttributes()
     var root = this.attachShadow({mode: 'open'});
     const p = document.createElement('div')
     p.innerHTML = `
       <h1>${title || 'Title'}</h1>
-      <table>
+      <table style="width:${width || '320px'}">
         <tr><td>Friend</td><td></td></tr>
       ${(friends || '').split('\\n').map(([name, avatar]) => `
         <tr><td>${name}</td><td><img src="${avatar}"></tr>
