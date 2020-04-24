@@ -17,7 +17,7 @@ class FriendsList extends HTMLElement {
         .split('\\n')
         .map(result => result.split(';'))
         .map(([name, avatar]) => `
-          <tr><td>${name}</td><td><img src="${avatar}"></tr>
+          <tr><td>${name}</td><td><img src="${avatar}" height="50" width="50"></tr>
         `)}
       </table>
     `
