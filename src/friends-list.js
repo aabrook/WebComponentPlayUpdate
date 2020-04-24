@@ -11,7 +11,12 @@ class FriendsList extends HTMLElement {
     const p = document.createElement('div')
     p.innerHTML = `
       <h1>${title || 'Title'}</h1>
-      ${(friends || '').split('\n').map(friend => friend)}
+      <table>
+        <tr><td>Friend</td><td></td></tr>
+      ${(friends || '').split('\\n').map(([name, avatar]) => `
+        <tr><td>${name}</td><td><img src="${avatar}"></tr>
+      `)}
+      </table>
     `
     root.appendChild(p);
   }
