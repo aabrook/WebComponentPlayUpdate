@@ -12,12 +12,12 @@ class FriendsList extends HTMLElement {
     p.innerHTML = `
       <h1>${title || 'Title'}</h1>
       <table class="${className || ''}" style="width:${width || '320px'}">
-        <tr><td>Friend</td><td></td></tr>
+        <tr><td>Friends</td><td></td></tr>
       ${(friends || '')
         .split('\\n')
         .map(result => result.split(';'))
         .map(([name, avatar]) => `
-          <tr><td>${name}</td><td><img src="${avatar}" height="50" width="50"></tr>
+          <tr><td><img src="${avatar}" height="50" width="50"><td>${name}</td></tr>
         `)}
       </table>
     `
