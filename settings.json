@@ -1,9 +1,9 @@
 {
   "source": "https://raw.githubusercontent.com/aabrook/WebComponentPlayUpdate/master/service.js",
   "state": {
-    "counter": {
-      "type": "number",
-      "default": 0
+    "title": {
+      "type": "text",
+      "default": "Sup!"
     }
   }
 }

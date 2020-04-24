@@ -13,4 +13,4 @@ class Counter extends HTMLElement {
     root.appendChild(p);
   }
 }
-var XComponent = customElements.define('my-counter', Counter);
+var XComponent = customElements.define('my-heading', Counter);
