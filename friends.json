@@ -12,6 +12,10 @@
     "friends": {
       "type": "text",
       "default": ""
+    },
+    "className": {
+      "type": "text",
+      "default": ""
     }
   }
 }
